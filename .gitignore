@@ -34,3 +34,4 @@
 # VSCode
 build
 main_test.cc
+.vscode/*.log
