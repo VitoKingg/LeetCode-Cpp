@@ -35,4 +35,3 @@
 build
 main_test.cc
 .vscode/*.log
-.vscode/*.json
