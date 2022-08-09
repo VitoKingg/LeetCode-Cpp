@@ -10,6 +10,8 @@ using namespace std;
  * return the minimum number of intervals you need to remove to make the rest of
  * the intervals non-overlapping.
  *
+ * T(n) = O(nlogn)
+ * S(n) = O(1)
  */
 
 class Solution {

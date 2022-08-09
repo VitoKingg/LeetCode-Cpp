@@ -19,6 +19,8 @@ using namespace std;
  * Return the minimum number of candies you need to have to distribute the
  * candies to the children.
  *
+ * T(n) = O(n)
+ * S(n) = O(n)
  */
 
 class Solution {

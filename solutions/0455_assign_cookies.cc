@@ -15,6 +15,8 @@ using namespace std;
  * be content. Your goal is to maximize the number of your content children and
  * output the maximum number.
  *
+ * T(n) = O(nlogn)
+ * S(n) = O(1)
  */
 
 class Solution {
