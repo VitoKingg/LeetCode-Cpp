@@ -25,7 +25,7 @@ using namespace std;
 
 class Solution {
  public:
-  int candy(vector<int>& ratings) {
+  int candy(vector<int> &ratings) {
     int size = ratings.size();
     vector<int> num(size, 1);
 
