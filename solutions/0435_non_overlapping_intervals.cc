@@ -1,7 +1,7 @@
-using namespace std;
-
 #include <algorithm>
 #include <vector>
+
+using namespace std;
 
 /**
  * @brief 0435 Non-overlapping Intervals
