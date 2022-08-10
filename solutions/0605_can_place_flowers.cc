@@ -19,10 +19,10 @@ using namespace std;
 class Solution {
  public:
   bool canPlaceFlowers(vector<int> &flowerbed, int n) {
-    int size = flowerbed.size();
-    for (int i = 0; i != size; ++i) {
+    int flowerbed_size = flowerbed.size();
+    for (int i = 0; i != flowerbed_size; ++i) {
       int prev = i == 0 ? 0 : flowerbed[i - 1];
-      int next = i == size - 1 ? 0 : flowerbed[i + 1];
+      int next = i == flowerbed_size - 1 ? 0 : flowerbed[i + 1];
       if (prev + flowerbed[i] + next == 0) {
         flowerbed[i] = 1;
         --n;

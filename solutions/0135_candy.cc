@@ -26,20 +26,20 @@ using namespace std;
 class Solution {
  public:
   int candy(vector<int> &ratings) {
-    int size = ratings.size();
-    vector<int> num(size, 1);
+    int ratings_size = ratings.size();
+    vector<int> candy_num(ratings_size, 1);
 
-    for (int i = 1; i != ratings.size(); ++i) {
+    for (int i = 1; i != ratings_size; ++i) {
       if (ratings[i - 1] < ratings[i]) {
-        num[i] = num[i - 1] + 1;
+        candy_num[i] = candy_num[i - 1] + 1;
       }
     }
-    for (int i = ratings.size() - 1; i != 0; --i) {
-      if ((ratings[i - 1] > ratings[i]) && (num[i - 1] <= num[i])) {
-        num[i - 1] = num[i] + 1;
+    for (int i = ratings_size - 1; i != 0; --i) {
+      if ((ratings[i - 1] > ratings[i]) && (candy_num[i - 1] <= candy_num[i])) {
+        candy_num[i - 1] = candy_num[i] + 1;
       }
     }
 
-    return accumulate(num.begin(), num.end(), 0);
+    return accumulate(candy_num.begin(), candy_num.end(), 0);
   }
 };

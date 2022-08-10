@@ -24,16 +24,16 @@ class Solution {
     sort(intervals.begin(), intervals.end(),
          [](const auto &a, const auto &b) { return a[1] < b[1]; });
 
-    int removed = 0;
+    int removed_count = 0;
     int prev = intervals[0][1];
     for (int i = 1; i != intervals.size(); ++i) {
       if (intervals[i][0] < prev) {
-        ++removed;
+        ++removed_count;
       } else {
         prev = intervals[i][1];
       }
     }
 
-    return removed;
+    return removed_count;
   }
 };
