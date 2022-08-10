@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    ".stylelintrc": "json",
+    "initializer_list": "cpp"
+  }
+}
