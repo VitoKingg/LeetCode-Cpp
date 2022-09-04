@@ -1,9 +1,0 @@
-{
-  "files.associations": {
-    ".stylelintrc": "json",
-    "initializer_list": "cpp",
-    "ostream": "cpp",
-    "numbers": "cpp",
-    "*.tcc": "cpp"
-  }
-}
