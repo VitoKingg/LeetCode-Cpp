@@ -24,6 +24,7 @@ class Solution {
     return true;
   }
 
+ private:
   bool validPalindrome(const string &s, int l, int r) {
     while (l < r) {
       if (s[l++] != s[r--]) {
