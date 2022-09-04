@@ -34,5 +34,10 @@
 # VSCode
 build
 main_test.cc
+# .vscode/*
+# !.vscode/launch.json
+# !.vscode/tasks.json
 .vscode/*.log
 .vscode/settings.json
+
+
