@@ -42,7 +42,8 @@ class Solution2 {
 
  private:
   int lower_bound(const vector<int> &nums, int target) {
-    int left = 0, right = nums.size();
+    int left = 0;
+    int right = nums.size();
 
     while (left < right) {
       const auto mid = left + (right - left) / 2;
@@ -58,7 +59,8 @@ class Solution2 {
   }
 
   int upper_bound(const vector<int> &nums, int target) {
-    int left = 0, right = nums.size();
+    int left = 0;
+    int right = nums.size();
 
     while (left < right) {
       const auto mid = left + (right - left) / 2;

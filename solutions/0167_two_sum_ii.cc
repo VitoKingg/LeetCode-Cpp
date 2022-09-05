@@ -29,6 +29,7 @@ class Solution {
     int i = 0;
     int j = numbers.size() - 1;
     int sum = 0;
+
     while (i < j) {
       sum = numbers[i] + numbers[j];
       if (sum > target) {

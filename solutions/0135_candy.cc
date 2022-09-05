@@ -34,6 +34,7 @@ class Solution {
         candy_num[i] = candy_num[i - 1] + 1;
       }
     }
+
     for (int i = ratings_size - 1; i != 0; --i) {
       if ((ratings[i - 1] > ratings[i]) && (candy_num[i - 1] <= candy_num[i])) {
         candy_num[i - 1] = candy_num[i] + 1;

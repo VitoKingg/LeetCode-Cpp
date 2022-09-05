@@ -36,6 +36,7 @@ class Solution {
         left = right + 1;
       }
     }
+
     return result;
   }
 };
