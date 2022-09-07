@@ -23,10 +23,11 @@ using namespace std;
  * The height of a rooted tree is the number of edges on the longest downward
  * path between the root and a leaf.
  *
+ * using BFS and Topological Sorting
+ * T(n) = O(V+E)
+ * S(n) = O(V)
+ *
  */
-// using BFS and Topological Sorting
-// T(n) = O(V+E)
-// S(n) = O(V)
 class Solution {
  public:
   vector<int> findMinHeightTrees(int n, vector<vector<int>> &edges) {
