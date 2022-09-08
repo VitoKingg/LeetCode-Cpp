@@ -39,9 +39,9 @@ class Solution {
   }
 };
 
+// Solution2: DP
 // Time:  O(n^2)
 // Space: O(n)
-// Traditional DP solution.
 class Solution2 {
  public:
   int lengthOfLIS(vector<int> &nums) {
