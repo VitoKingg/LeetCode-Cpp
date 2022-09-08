@@ -13,8 +13,6 @@ using namespace std;
  * some or no elements without changing the order of the remaining elements. For
  * example, [3,6,2,7] is a subsequence of the array [0,3,1,6,2,2,7].
  *
- * T(n) = O()
- * S(n) = O()
  */
 
 // Solution1: Binary search with STL.
