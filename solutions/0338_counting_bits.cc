@@ -10,7 +10,7 @@ using namespace std;
  * of i.
  *
  */
-
+// Solution: Dynamic Programming
 // Time:  O(n)
 // Space: O(n)
 class Solution {
@@ -19,8 +19,10 @@ class Solution {
     vector<int> result(n + 1);
 
     for (int i = 1; i <= n; ++i) {
-      // Note: i&1 equals to i%2
+      // Note: i&1 equals to i%2， i/2 equals to i>>1
       result[i] = result[i / 2] + (i & 1);
+      // result[i] = result[i & (i - 1)] + 1;
+      // result[i] = i & 1 ? result[i - 1] + 1 : result[i / 2];
     }
 
     return result;
